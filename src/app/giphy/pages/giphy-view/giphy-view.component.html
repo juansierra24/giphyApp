@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Giphy App - Blue Coding</h2>
+  <form [formGroup]="searchForm" class="searchForm">
+    <input
+      type="text"
+      pInputText
+      formControlName="searchInput"
+      placeholder="Search" />
+  </form>
+  <hr />
+  <div>
+    <app-giphy-layout [gifs]="gifs"></app-giphy-layout>
+
+    <p-paginator
+      [totalRecords]="totalRecords"
+      [rows]="20"
+      (onPageChange)="onPageChange($event)"></p-paginator>
+
+    <app-giphy-lightbox></app-giphy-lightbox>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="lightbox" [ngClass]="{ hidden: !visible }">
+  <div class="lightbox__content">
+    <button class="lightbox__close" (click)="close()">
+      <i class="pi pi-times"></i>
+    </button>
+    <button class="lightbox__arrow lightbox__arrow--left" (click)="previous()">
+      <i class="pi pi-chevron-left"></i>
+    </button>
+    <img
+      class="lightbox__img"
+      [src]="gifs[index].images.original.url"
+      alt="alt" />
+    <button class="lightbox__arrow lightbox__arrow--right" (click)="next()">
+      <i class="pi pi-chevron-right"></i>
+    </button>
+  </div>
+</div>
