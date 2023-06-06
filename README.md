@@ -1,4 +1,4 @@
-# obraaldia-refactoring-frontend
+# Giphy App - Blue Coding Challenge
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
